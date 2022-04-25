@@ -155,6 +155,43 @@ h6,
     border-color: var(--primary) !important;
 }
 
+
+.navbar-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: ;
+  }
+  .navbar-nav ul li {
+    position: relative;
+  }
+  .navbar-nav ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    flex-direction: column;
+    width: 200px;
+    background-color: #fff;
+    opacity: 0;
+    transition: .3s;
+    visibility: hidden;
+  }
+  .navbar-nav ul li a {
+    margin-left: 0 !important;
+    padding:   40px 20px !important;
+  }
+  .navbar-nav ul li ul li a {
+    padding: 5px 20px !important;
+    color: #333;
+    display: block;
+    font-weight: 400;
+  }
+  .navbar-nav ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+  }
+
 @media (max-width: 991.98px) {
     .sticky-top.navbar-dark {
         position: relative;
